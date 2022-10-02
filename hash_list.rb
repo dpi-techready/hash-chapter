@@ -14,3 +14,12 @@ list_of_people = [
   { :name => "Carl", :age => 9 },
 ]
 
+# p list_of_people.at(0)
+
+list_of_people.each do |list_of_people|
+  "#{list_of_people[:name]}: #{list_of_people[:age]}"
+  if list_of_people[:age] >= 16
+    p list_of_people[:name]
+  end
+end
+
